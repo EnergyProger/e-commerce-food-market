@@ -1,9 +1,14 @@
 import { Link } from "react-router";
 
+import styles from "./HomePage.module.scss";
+import { useTheme } from "@/shared/config";
+
 const HomePage = () => {
+  const { toggleTheme } = useTheme();
   return (
     <>
-      Home
+      <h1 className={styles.title}>Home</h1>
+      <button onClick={toggleTheme}>Toggle theme</button>
       <Link to={"/login"}>Login page</Link>
     </>
   );
