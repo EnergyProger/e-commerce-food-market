@@ -1,0 +1,11 @@
+@use "themes/dark.scss";
+@use "themes/light.scss";
+@use "global.scss";
+@use "reset.scss";
+
+body {
+  font: --var(--font-md);
+  min-height: 100dvh;
+  background: var(--white);
+  color: var(--black);
+}
