@@ -4,7 +4,7 @@
 @use "reset.scss";
 
 body {
-  font: --var(--font-md);
+  font: var(--font-md);
   min-height: 100dvh;
   background: var(--white);
   color: var(--black);

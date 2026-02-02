@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-ua" viewBox="0 0 640 480">
+  <defs>
+    <clipPath id="roundedCorners">
+      <rect width="640" height="480" rx="20" ry="20"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#roundedCorners)">
+    <rect width="640" height="480" fill="gold"/>
+    <rect width="640" height="240" fill="#0057b8"/>
+  </g>
+</svg>
