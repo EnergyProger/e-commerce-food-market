@@ -1,7 +1,8 @@
 import { Link } from "react-router";
 import { useTheme } from "@/shared/config";
 import { useTranslation } from "react-i18next";
-import { Button } from "@/shared/ui";
+import { Button, Input } from "@/shared/ui";
+import SearchIcon from "@/shared/assets/icons/Search.svg?react";
 
 import styles from "./HomePage.module.scss";
 
@@ -16,6 +17,7 @@ const HomePage = () => {
   return (
     <>
       <h1 className={styles.title}>{t("hello")}</h1>
+      <Input placeholder="Search..." Icon={<SearchIcon />} />
       <Button onClick={toggleTheme}>Toggle theme</Button>
       <Button theme="outline" onClick={changeLanguage}>
         language
