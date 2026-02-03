@@ -4,5 +4,27 @@
     "cart": "Кошик",
     "searchBy": "Пошук",
     "login": "Вхід"
+  },
+  "footer": {
+    "about": "Про нас",
+    "aboutUs": "Про компанію",
+    "ourBranches": "Наші філії",
+    "changelog": "Список змін",
+    "quickLinks": "Швидкі посилання",
+    "faqs": "FAQ",
+    "recipes": "Рецепти",
+    "contactUs": "Зв'язатися з нами",
+    "helpSupport": "Допомога та підтримка",
+    "termsOfService": "Умови надання послуг",
+    "privacyPolicy": "Політика конфіденційності",
+    "security": "Безпека",
+    "company": "Компанія",
+    "blog": "Блог",
+    "contact": "Контакти",
+    "social": "Соцмережі",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "x": "X",
+    "copyright": "Усі права захищені © {{year}} {{company}}"
   }
 }
