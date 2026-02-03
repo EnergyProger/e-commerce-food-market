@@ -1,3 +1,10 @@
-.title {
-  color: var(--primary-color);
+.pageWrapper {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  padding: 0 calc(var(--spacing-10) * 2);
 }
