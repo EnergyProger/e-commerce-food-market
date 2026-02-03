@@ -1,30 +1,16 @@
 import { Link } from "react-router";
-import { useTheme } from "@/shared/config";
 import { useTranslation } from "react-i18next";
-import { AppIcon, Button, Input } from "@/shared/ui";
-import SearchIcon from "@/shared/assets/icons/Search.svg?react";
+import { Header } from "@/widgets/Header";
 
 import styles from "./HomePage.module.scss";
 
 const HomePage = () => {
-  const { toggleTheme } = useTheme();
-  const { t, i18n } = useTranslation();
-
-  const changeLanguage = () => {
-    i18n.changeLanguage(i18n.language === "en" ? "ua" : "en");
-  };
+  const { t } = useTranslation();
 
   return (
     <>
+      <Header />
       <h1 className={styles.title}>{t("hello")}</h1>
-      <Input
-        placeholder="Search..."
-        Icon={<AppIcon Icon={SearchIcon} filled />}
-      />
-      <Button onClick={toggleTheme}>Toggle theme</Button>
-      <Button theme="outline" onClick={changeLanguage}>
-        language
-      </Button>
       <Link to={"/login"}>Login page</Link>
     </>
   );
