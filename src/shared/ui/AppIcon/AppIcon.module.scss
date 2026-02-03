@@ -1,0 +1,12 @@
+.wrapper {
+  background-color: var(--primary-color-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: calc(var(--spacing-3) - var(--spacing-1));
+  border-radius: 100%;
+}
+
+.filled {
+  fill: var(--primary-color);
+}
