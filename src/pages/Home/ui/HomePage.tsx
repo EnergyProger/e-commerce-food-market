@@ -1,4 +1,3 @@
-import { Link } from "react-router";
 import { useTranslation } from "react-i18next";
 import { Header } from "@/widgets/Header";
 import { Footer } from "@/widgets/Footer";
@@ -11,10 +10,7 @@ const HomePage = () => {
   return (
     <div className={styles.pageWrapper}>
       <Header />
-      <main className={styles.content}>
-        <h1 className={styles.title}>{t("hello")}</h1>
-        <Link to={"/login"}>Login page</Link>
-      </main>
+      <main className={styles.content}></main>
       <Footer />
     </div>
   );
