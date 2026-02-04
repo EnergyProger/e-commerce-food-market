@@ -29,5 +29,10 @@
   },
   "pageLoader": {
     "loading": "Loading..."
+  },
+  "pageError": {
+    "title": "Something went wrong",
+    "description": "We're experiencing some technical difficulties. Please try again later.",
+    "reload": "Try again"
   }
 }
