@@ -1,3 +1,8 @@
+import { ENGLISH_LANGUAGE, UKRAINIAN_LANGUAGE } from "./i18n/constants";
+import {
+  languageIconList,
+  type SupportedLngsType,
+} from "./i18n/LanguageIconList";
 import { AppRoutes, routePaths } from "./router/routePaths";
 import {
   Theme,
@@ -6,11 +11,6 @@ import {
   LOCAL_STORAGE_THEME_KEY,
 } from "./theme/ThemeContext";
 import { useTheme } from "./theme/useTheme";
-import {
-  languageIconList,
-  type SupportedLngsType,
-} from "./i18n/LanguageIconList";
-import { ENGLISH_LANGUAGE, UKRAINIAN_LANGUAGE } from "./i18n/constants";
 
 export {
   AppRoutes,

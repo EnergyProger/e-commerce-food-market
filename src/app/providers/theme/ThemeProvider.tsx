@@ -1,10 +1,11 @@
+import { useEffect, useState } from "react";
+
 import {
   LOCAL_STORAGE_THEME_KEY,
   Theme,
   ThemeContext,
   type ThemeType,
 } from "@/shared/config";
-import { useEffect, useState } from "react";
 
 interface ThemeProviderProps {
   children: React.ReactNode;
