@@ -2,11 +2,12 @@ name: CI
 
 on:
   push:
-    branches: ["main"]
+    branches: [main]
 
 jobs:
   ci:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -16,28 +17,29 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22.x
+          node-version: "22.x"
           cache: "npm"
 
       - name: Install dependencies
-        uses: npm ci
+        run: npm ci
 
-      - name: Run lint ts
-        uses: npm run lint:ts
+      - name: TypeScript check
+        run: npm run lint:ts
 
-      - name: Run Eslint
-        uses: npm run lint
+      - name: ESLint
+        run: npm run lint
 
-      - name: Run Stylelint
-        uses: npm run lint:scss
+      - name: SCSS lint
+        run: npm run lint:scss
 
-      - name: Run unit tests
-        uses: npm run test:unit
+      - name: Unit tests
+        run: npm run test:unit --run
 
-      - name: Run regression tests
+      - name: Regression tests
         uses: chromaui/action@latest
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          exitZeroOnChanges: false
 
       - name: Build
         run: npm run build
